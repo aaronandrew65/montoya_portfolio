@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <img src="assets/images/stars.png" alt="" class="background">
+    <!-- Navbar -->
+    <nav>
+        <h1>Aaron Montoya</h1>
+        <ul class="nav">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+    <!-- Hero Seection -->
+    <section class="hero" id="about">
+        <img src="/assets/images/IMG-6435.jpg" alt="" loading="lazy" class="hero-img">
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                    Hi, my name is Aaron Montoya and I am a front-end developer with a passion for creating beautiful,
+                    intuitive user interfaces. I have experience working with HTML, CSS and JavaScript and I am always 
+                    looking to learn new technologies and techniques. Whether it is building a responsive website from scratch
+                    or optimizing an existing interface for better performance, I'm dedicated to delivering high-quality
+                    work that meets the needs of both users and stakeholders.
+            </p>
+        </div>
+    </section>
+    <!-- More About -->
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <h2 class="skills-header">My Top Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="assets/icons/icons8-html.svg" alt="" loading="lazy" class="icon icon-card">
+                <img src="assets/icons/icons8-css.svg" alt="" loading="lazy" class="icon icon-card">
+                <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card">
+            </div>
+            <div class="second-set animate__animated animate__pulse">
+                <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card">
+                <img src="assets/icons/icons8-react.svg" alt="" loading="lazy" class="icon icon-card">
+                <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card">
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">My Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="assets/images/weather.png" alt="" loading="lazy" class="project-pic">
+                <h3 class="project-title">Weather App</h3>
+                <p class="project-details">
+                    Single page weather application that shows users real time weather infomormation from OpenWeatherAPI using
+                    JavaScript to pull from the API.
+                </p>
+                <a href="https://montoya-weather-app.netlify.app/" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/login.png" alt="" loading="lazy" class="project-pic">
+                <h3 class="project-title">Login Page</h3>
+                <p class="project-details">
+                    Small login page with interactive CSS, HTML and JavaScript that allows switching between login and 
+                    register screen.
+                </p>
+                <a href="https://montoya-login-app.netlify.app/#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/gym.png" alt="" loading="lazy" class="project-pic">
+                <h3 class="project-title">Gym Website</h3>
+                <p class="project-details">
+                    Small simple gym website with funcational CSS and HTML. Interactive navbar that allows users
+                    to swtich between tabs. 
+                </p>
+                <a href="https://altitude-fitness.netlify.app/index.html" target="_blank" class="project-link">Check it Out</a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xaygngke" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    <!-- Social -->
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/aaron-montoya-270579178/" target="_blank"
+          ><img
+            src="assets/icons/icons8-linkedin-circled.gif"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/aaronandrew65" target="_blank"
+          ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"/></a>
+    </div>
+    <!-- Scroll -->
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt="scroll-up"
+  /></i>
+    <!-- Footer -->
+    <footer>
+        <p class="copy">&copy; Copyright 2023</p>
+        <p class="copy">
+            Built by Aaron Montoya
+        </p>
+  </footer>
+
+
+    <script src="assets/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
